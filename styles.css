@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik+Bubbles&display=swap');
+@keyframes animação{
+    0%  {transform: rotate(0deg); left: 0px; top: 0px;}
+    50% {transform: rotate(359deg);left: 700px; top: 0px}
+    100% {transform: rotate(0); left: 0; top: 0;}
+
+}
+
+@keyframes anim{
+25% {opacity: 1;}
+50% {opacity: 0;}
+}
+*{  margin: 0; padding: 10;}
+body{
+    background-color: #070922;
+}
+
+
+#Menu ul{
+    max-width: 800px;
+    display: inline;
+}
+#Menu ul li{
+    font-family: 'Rubik Bubbles', cursive;
+    color: #f0ffff;
+    padding: 30px; /*distancia das letras*/
+    display: inline;
+    background-color: rgb(7, 9, 34);
+}
+
+#Menu ul li a{
+    padding: 30px;
+    display: inline-block;
+    color: aqua;
+    text-decoration:none;
+    transition:all .4s;
+}
+#Menu ul li a:hover{
+    color: rgb(97, 243, 0); /*Muda cor da fonte ao passar em cima*/
+    background-color:rgb(19, 1, 20);
+}
+#Menu ul li a:last-child{
+    float: right;
+}
+#imagem {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: animação;
+    animation: animação 15s linear infinite;
+}
+#titulo1 {
+    position: absolute;
+    left: 200px; 
+    top: 400px;
+}
+#sliders img{
+    width: 800px;
+    height: 600px;
+    opacity: 0;
+    position: absolute;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#profile img{
+    width: 400px;
+    height: 400px;
+}
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+    animation-delay: 10s;
+}
+.foto:nth-child(3){
+    animation-delay: 20s;
+}
+
