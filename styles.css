@@ -1,60 +1,119 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Yurby</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav id="Menu">
-        <ul>
-            <li>
-                <a href="">Dowloads Windows</a>
-            </li>
-            <li>
-                <a href="">Dowloads Linux</a>
-            </li>
-            <li>
-                <a href="https://github.com/gorpu" rel="next">GitHub</a>
-            </li>
-        </ul>
-    </nav>
-    <script>
-        var p1 = document.getElementsByTagName('button')[0]
-        p1.style.background = 'yellow'
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik+Bubbles&display=swap');
+@keyframes animação{
+    0%  {transform: rotate(0deg); left: 0px; top: 0px;}
+    50% {transform: rotate(359deg);left: 700px; top: 0px}
+    100% {transform: rotate(0); left: 0; top: 0;}
 
-    </script>
-<img id="imagem" src="images/image.png" alt="void">
-    <div id="sliders">
-        <img class="foto" src="backgrounds/bg.png" alt="void">
-        <img class=foto" src="backgrounds/bg1.png" alt="void">
-        <img class="foto" src="backgrounds/bg2.png" alt="void">
-    </div>
-    <script src="config.js"></script>
-    <div style="position: relative; top: 900px; left: 50px; transition-property: background-color; transition-duration: 2s;">
-        <h2 style="color: rgb(201, 201, 32);">Sobre o Desenvolvedor</h2>
-        <p style="color: aquamarine;">
-        -Automação de Testes Web<br>
-        -Criar interfaces Graficas<br>
-        -Análise de dados<br>
-        <br></p>
-        <h3 style="color: aqua;">Biografia</h3>
-        <p id="biograpy" style="color: rgb(255, 255, 0);">"Hello World", me clamo Liedson e me intitulo Goorpu<br>
-         (era um personagem do desenho He-Man), desde muito cedo tive<br> 
-         contato com computadores (Win7 Starter),eu tinha 9 anos<br> 
-         nessa época quando meu tio me deu um notebook, minha<br> 
-         família não tinha condições de colocar internet em<br>
-         casa, meu pai fazia um curso de informática e tinha uns<br>
-         materiais de introdução ao Windows e alguns DVDs, por<br>
-         ser uma criança com um notebook sem internet eu fui<br>
-         ler e praticar as coisas que eu lia e aprendia<br> 
-         naqueles livros, aprendi a usar o Office e a<br>
-         formatar e particionar o Windows. Desde então<br>
-         sempre fui aprendendo cada vez mais sobre<br>
-         computadores e tecnologia.</p>
-    </div>
-    <div id="profile" style="position: relative; top: 350px; left: 150px;transition-property: background-color; transition-duration: 2s;">
-        <img class="foto1" src="images/profile.png" alt="profile" style="border-radius: 150px; height: 150px; width: 150px;">
-    </div>
-</body>
-</html>
+}
+
+@keyframes anim{
+25% {opacity: 1;}
+50% {opacity: 0;}
+}
+*{  margin: 0; padding: 10;}
+body{
+    background-color: #070922;
+}
+
+
+#Menu ul{
+    max-width: 800px;
+    display: inline;
+}
+#Menu ul li{
+    font-family: 'Rubik Bubbles', cursive;
+    color: #f0ffff;
+    padding: 30px; /*distancia das letras*/
+    display: inline;
+    background-color: rgb(7, 9, 34);
+}
+
+#Menu ul li a{
+    padding: 30px;
+    display: inline-block;
+    color: aqua;
+    text-decoration:none;
+    transition:all .4s;
+    
+}
+#Menu ul li a:hover{
+    color: rgb(97, 243, 0); /*Muda cor da fonte ao passar em cima*/
+    background-color:rgb(19, 1, 20);
+}
+#Menu ul li a:last-child{
+    float: right;
+}
+#imagem {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: animação;
+    animation: animação 15s linear infinite;
+}
+#titulo1 {
+    position: absolute;
+    left: 200px; 
+    top: 400px;
+}
+#sliders img{
+    width: 800px;
+    height: 600px;
+    opacity: 0;
+    position: absolute;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+#profile img{
+    width: 400px;
+    height: 400px;
+}
+.foto:nth-child(1){
+
+}
+.foto:nth-child(2){
+    animation-delay: 10s;
+}
+.foto:nth-child(3){
+    animation-delay: 20s;
+}
+
+
+@media (max-width: 568px) {
+    #sliders img{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+        position: absolute;
+        animation-name: anim;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    #Menu ul li{
+        font-family: 'Rubik Bubbles', cursive;
+        color: #f0ffff;
+        padding: 0px; /*distancia das letras*/
+        display: inline;
+        background-color: rgb(7, 9, 34);
+    }
+    #Menu ul li a{
+        padding: 15px;
+        display: inline-block;
+        color: aqua;
+        text-decoration:none;
+        transition:all .4s;
+    }
+    @keyframes animação{
+        0%  {transform: rotate(0deg); left: 0px; top: 0px;}
+        50% {transform: rotate(359deg);left: 300px; top: 0px}
+        100% {transform: rotate(0); left: 0; top: 0;}
+    
+    }
+    biograpy {
+        font-size: 10px;
+    }
+    #body {
+        background-color: #070922;
+    }
+}
