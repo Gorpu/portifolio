@@ -106,8 +106,8 @@ body{
     }
     @keyframes animação{
         0%  {transform: rotate(0deg); left: 0px; top: 0px;}
-        50% {transform: rotate(359deg);left: 300px; top: 0px}
-        100% {transform: rotate(0); left: 0; top: 0;}
+        50% {transform: rotate(359deg);left: 100px; top: 0px}
+        100% {transform: rotate(0); left: 0px; top: 0px;}
     
     }
     biograpy {
