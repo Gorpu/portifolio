@@ -27,6 +27,7 @@ body{
     padding: 30px; /*distancia das letras*/
     display: inline;
     background-color: rgb(7, 9, 34);
+    font-size: 25px;
 }
 
 #Menu ul li a{
@@ -96,6 +97,7 @@ body{
         padding: 0px; /*distancia das letras*/
         display: inline;
         background-color: rgb(7, 9, 34);
+        font-size: 25px;
     }
     #Menu ul li a{
         padding: 15px;
