@@ -134,7 +134,7 @@ body{
     height: 50px;
     width: 50px;
 }
-@media (min-width: 480px){
+@media (max-width: 480px){
     #sobreodev {
         position: relative;
         top: 600px;
@@ -145,8 +145,8 @@ body{
         height: 860px;
     }
     #biograpy {
-        color: rgb(255, 255, 0); 
-        font-size: 42px;
+        color: rgb(27, 27, 22); 
+        font-size: 56px;
     }
     #foto1 {
         border-radius: 150px;
