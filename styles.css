@@ -142,11 +142,11 @@ body{
         background-color: rgb(2, 1, 3);
         border-radius: 50px;
         width: 700px;
-        height: 780px;
+        height: 860px;
     }
     #biograpy {
         color: rgb(255, 255, 0); 
-        font-size: 34px;
+        font-size: 42px;
     }
     #foto1 {
         border-radius: 150px;
