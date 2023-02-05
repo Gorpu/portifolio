@@ -4,9 +4,12 @@
     0%  {transform: rotate(0deg); left: 0px; top: 25px;}
     50% {transform: rotate(359deg);left: 700px; top: 25px}
     100% {transform: rotate(0); left: 0; top: 25px;}
-
 }
-
+@keyframes animação300{
+    0%  {transform: rotate(0deg); left: 0px; top: 25px;}
+    50% {transform: rotate(359deg);left: 300px; top: 25px}
+    100% {transform: rotate(0); left: 0; top: 25px;}
+}
 @keyframes anim{
 25% {opacity: 1;}
 50% {opacity: 0;}
@@ -57,10 +60,10 @@ body{
     left: 200px; 
     top: 400px;
 }
-#sliders img{
+#sliders img {
     top: 570px;
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     opacity: 0;
     position: absolute;
     animation-name: anim;
@@ -102,36 +105,80 @@ body{
     top: 295px;
     left: 60px;
 }
-
-@media (max-width: 568px) {
-    #sliders img{
+#sobreodev {
+    position: relative;
+    top: 900px;
+    left: 50px;
+    background-color: rgb(10, 6, 20);
+    border-radius: 10px;
+    width: 800px;
+    height: 890px;
+}
+#biograpy {
+    color: rgb(255, 255, 0); 
+    font-size: 24px;
+}
+#foto1 {
+    border-radius: 150px;
+    position: relative;
+    left: 250px;
+    top: 50px; 
+    height: 150px;
+    width: 150px;
+}
+#foto2 {
+    border-radius:150px;
+    position: absolute ;
+    left: 350px;
+    top: 790px;
+    height: 50px;
+    width: 50px;
+}
+@media (max-width: 700px){
+    #sobreodev {
+        position: relative;
+        top: 600px;
+        left: 0px;
+        background-color: rgb(2, 1, 3);
+        border-radius: 50px;
+        width: 485px;
+        height: 700px;
+    }
+    #biograpy {
+        color: rgb(255, 255, 0); 
+        font-size: 14px;
+    }
+    #foto1 {
+        border-radius: 150px;
+        position: relative;
+        left: 150px;
+        top: 50px; 
+        height: 150px;
+        width: 150px;
+    }
+    #foto2 {
+        border-radius:150px;
+        position: absolute ;
+        left: 250px; 
+        top: 580px;
+        width: 50px;
+    }
+    #imagem {
+        width: 150px;
+        height: 150px;
+        position:relative;
+        animation-name: animação300;
+        animation: animação300 15s linear infinite;
+    }
+    #sliders img {
+        top: 560px;
+        left: 10px;
         width: 500px;
         height: 500px;
         opacity: 0;
         position: absolute;
         animation-name: anim;
-        animation-duration: 30s;
+        animation-duration: 27s;
         animation-iteration-count: infinite;
-    }
-    #Menu ul li{
-        font-family: 'Rubik Bubbles', cursive;
-        color: #f0ffff;
-        padding: 0px; /*distancia das letras*/
-        display: inline;
-        background-color: rgb(7, 9, 34);
-        font-size: 25px;
-    }
-    #Menu ul li a{
-        padding: 15px;
-        display: inline-block;
-        color: aqua;
-        text-decoration:none;
-        transition:all .4s;
-    }
-    biograpy {
-        font-size: 10px;
-    }
-    #body {
-        background-color: #070922;
     }
 }
