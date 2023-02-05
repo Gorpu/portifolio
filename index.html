@@ -9,20 +9,29 @@
     <nav id="Menu">
         <ul>
             <li>
-                <a href="">Dowloads Windows</a>
+                <a href="" onmouseover="showTooltip()" onmouseout="hideTooltip()">IFK - Auto Web (Windows)</a>
             </li>
             <li>
-                <a href="">Dowloads Linux</a>
-            </li>
-            <li>
-                <a href="https://github.com/gorpu" rel="next">GitHub</a>
+                <a href="" onmouseover="showTooltip2()" onmouseout="hideTooltip2()">IFK - YT Down (Windows)</a>
             </li>
         </ul>
     </nav>
-    <script>
-        var p1 = document.getElementsByTagName('button')[0]
-        p1.style.background = 'yellow'
 
+    <div class="IFk_Web_Auto_Info">Automatize a forma com que <br>seus anúncios chegam no Whatsapp<br>de seus clientes.</div>
+    <div class="IFk_YT_Down">Converta vídeos do You Tube para <br>MP4 em poucos cliques.</div>
+    <script>
+        function showTooltip(){
+            document.querySelector(".IFk_Web_Auto_Info").style.display = "block";
+        }
+        function hideTooltip() {
+            document.querySelector(".IFk_Web_Auto_Info").style.display = "none";
+        }
+        function showTooltip2(){
+            document.querySelector(".IFk_YT_Down").style.display = "block";
+        }
+        function hideTooltip2(){
+            document.querySelector(".IFk_YT_Down").style.display = "none";
+        }
     </script>
 <img id="imagem" src="images/image.png" alt="void">
     <div id="sliders">
@@ -30,8 +39,7 @@
         <img class=foto" src="backgrounds/bg1.png" alt="void">
         <img class="foto" src="backgrounds/bg2.png" alt="void">
     </div>
-    <script src="config.js"></script>
-    <div style="position: relative; top: 700px; left: 50px;">
+    <div style="position: relative; top: 800px; left: 50px; background-color: rgb(10, 6, 20); border-radius: 10px; width: 650px; height: 800px;">
         <h2 style="color: rgb(201, 201, 32);">Sobre o Desenvolvedor</h2>
         <p style="color: aquamarine;">
         -Automação de Testes Web<br>
@@ -52,9 +60,8 @@
          formatar e particionar o Windows. Desde então<br>
          sempre fui aprendendo cada vez mais sobre<br>
          computadores e tecnologia.</p>
-    </div>
-    <div id="profile" style="position: relative; top: 950px; left: 150px;transition-property: background-color; transition-duration: 2s;">
-        <img class="foto1" src="images/profile.png" alt="profile" style="border-radius: 150px; height: 150px; width: 150px;">
+        <img class="foto1" src="images/profile2.jpeg" alt="profile" style="border-radius: 150px;position: relative; left: 220px; top: 60px; height: 150px; width: 150px;">
+        <img class="foto2" src="images/profile.png" alt="profile2" style="border-radius: 150px;position: absolute ; left: 320px; top: 675px; height: 50px; width: 50px;">
     </div>
 </body>
 </html>
