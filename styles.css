@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik+Bubbles&display=swap');
 @keyframes animação{
-    0%  {transform: rotate(0deg); left: 0px; top: 0px;}
-    50% {transform: rotate(359deg);left: 700px; top: 0px}
-    100% {transform: rotate(0); left: 0; top: 0;}
+    0%  {transform: rotate(0deg); left: 0px; top: 25px;}
+    50% {transform: rotate(359deg);left: 700px; top: 25px}
+    100% {transform: rotate(0); left: 0; top: 25px;}
 
 }
 
@@ -24,15 +24,15 @@ body{
 #Menu ul li{
     font-family: 'Rubik Bubbles', cursive;
     color: #f0ffff;
-    padding: 30px; /*distancia das letras*/
-    display: inline;
+    padding: 20px; /*distancia das letras*/
+    display: flow-root;
     background-color: rgb(7, 9, 34);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #Menu ul li a{
-    padding: 30px;
-    display: inline-block;
+    padding: 50px;
+    display:flow-root;
     color: aqua;
     text-decoration:none;
     transition:all .4s;
@@ -43,11 +43,11 @@ body{
     background-color:rgb(19, 1, 20);
 }
 #Menu ul li a:last-child{
-    float: right;
+    float: center;
 }
 #imagem {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position:relative;
     animation-name: animação;
     animation: animação 15s linear infinite;
@@ -58,12 +58,13 @@ body{
     top: 400px;
 }
 #sliders img{
+    top: 570px;
     width: 800px;
     height: 600px;
     opacity: 0;
     position: absolute;
     animation-name: anim;
-    animation-duration: 30s;
+    animation-duration: 27s;
     animation-iteration-count: infinite;
 }
 #profile img{
@@ -71,15 +72,36 @@ body{
     height: 400px;
 }
 .foto:nth-child(1){
-
+    animation-delay: 6s;
 }
 .foto:nth-child(2){
-    animation-delay: 10s;
+    animation-delay: 13;
 }
 .foto:nth-child(3){
-    animation-delay: 20s;
+    animation-delay: 19s;
 }
-
+.IFk_Web_Auto_Info{
+    display: none;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(19, 1, 20);
+    position: absolute;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    top: 135px;
+    left: 60px;
+  }
+.IFk_YT_Down{
+    display: none;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(19, 1, 20);
+    position: absolute;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    top: 295px;
+    left: 60px;
+}
 
 @media (max-width: 568px) {
     #sliders img{
@@ -105,12 +127,6 @@ body{
         color: aqua;
         text-decoration:none;
         transition:all .4s;
-    }
-    @keyframes animação{
-        0%  {transform: rotate(0deg); left: 0px; top: 0px;}
-        50% {transform: rotate(359deg);left: 100px; top: 0px}
-        100% {transform: rotate(0); left: 0px; top: 0px;}
-    
     }
     biograpy {
         font-size: 10px;
