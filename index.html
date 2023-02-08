@@ -38,18 +38,8 @@
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop';
         }
         var device = detectDevice()
-        var MoblieDeviceAlert = document.createElement("div")
-        MoblieDeviceAlert.innerHTML ='<u><b>Você esta usando um dispositivo móvel, sua experiência pode ser afetada.<b><u>'
-        MoblieDeviceAlert.style.padding = "20px";
-        MoblieDeviceAlert.style.background = 'rgb(32, 247, 25)';
-        MoblieDeviceAlert.style.width = "600px";
-        MoblieDeviceAlert.style.color = "rgb(2, 1, 3)";
-        MoblieDeviceAlert.style.height = "5px";
-        MoblieDeviceAlert.style.border = "5px";
-        MoblieDeviceAlert.style.top = "0px";
-        MoblieDeviceAlert.style.position = "absolute";
         if (device == "Mobile"){
-            document.body.appendChild(MoblieDeviceAlert)
+            alert("Downloads disponíveis apenas para Computadores.")
         }
     </script>
 <img id="imagem" src="images/image.png" alt="void">
