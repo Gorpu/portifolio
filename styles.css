@@ -27,9 +27,8 @@ body{
 #Menu ul li{
     font-family: 'Rubik Bubbles', cursive;
     color: #f0ffff;
-    padding: 20px; /*distancia das letras*/
+    padding: 0px; /*distancia das letras*/
     display: flow-root;
-    background-color: rgb(7, 9, 34);
     font-size: 20px;
 }
 
@@ -91,7 +90,7 @@ body{
     background-color: yellow;
     padding: 5px;
     border-radius: 5px;
-    top: 135px;
+    top: 105px;
     left: 60px;
   }
 .IFk_YT_Down{
@@ -102,7 +101,7 @@ body{
     background-color: yellow;
     padding: 5px;
     border-radius: 5px;
-    top: 295px;
+    top: 222px;
     left: 60px;
 }
 #sobreodev {
@@ -129,7 +128,8 @@ body{
 #foto2 {
     border-radius:150px;
     position: absolute ;
-    left: 350px; top: 790px;
+    left: 340px; 
+    top: 780px;
     height: 50px;
     width: 50px;
 }
